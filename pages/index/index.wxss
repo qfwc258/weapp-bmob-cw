@@ -1,0 +1,18 @@
+/**index.wxss**/
+.swiper{ width:100%; text-align:center; }
+.swiper image{ width: 100%; height: 350rpx;}
+
+.menu { flex: 1; border: 0.1rpx solid #eee; border-bottom:none;}
+.menu image{ width: 100%; height: 40rpx}
+
+.list-item{ border-bottom:1rpx solid #eee;}
+.list-item-title{line-height: 36rpx; margin-top: 35rpx; margin-bottom: 20rpx; display: block; font-size: 36rpx; }
+.list-item-img { flex: 1; margin: 0 10rpx; }
+.list-item-img image{ width: 100%; height: 140rpx}
+.list-item-sub-title{ font-size: 26rpx; color: #999; margin-bottom: 10rpx;}
+.list-item-big-img image{ width:100%; height: 400rpx; display: block}
+
+.dl-list{ border-top: 1rpx solid #eee; padding: 20rpx}
+.dl-list-img{ width: 180rpx; height: 120rpx;}
+.dl-list-img image{ width: 100%; height: 120rpx}
+.dl-list-txt{ flex: 1; padding-left: 25rpx; font-size: 30rpx;}

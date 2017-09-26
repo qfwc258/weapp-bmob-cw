@@ -1,0 +1,46 @@
+<!--pages/MsgList/MsgList.wxml-->
+<navigator url="../AddMsg/AddMsg" class="AddMsg" style="position:fixed; bottom:30rpx; right:30rpx;" animation="{{animationData}}">+</navigator>
+
+<view class="page" bindtouchmove="pageMove" bindtouchstart="pageStat">
+  <view class="top-bar">
+    <view class="title-bar">
+      <view class="title-img">
+        <image src="../../images/user.jpg"></image>
+      </view>
+      <view class="title-text">
+        <view class="title-title">爆料</view>
+        <view class="title-content">
+          话题 <text class="red">{{ length }}</text>
+        </view>
+      </view>
+      <navigator url="../userList/userList" class="user">
+          <image src="../../images/user.png"></image>
+      </navigator>
+    </view>
+  </view>
+
+  <view class="item" wx:for="{{ list }}">
+    <view bindtap="articleEvent" data-id="{{ item.id }}" >
+      <view class="user-bar">
+        <view class="user-pic"><image src="{{ item.userPic }}"></image></view>
+        <view class="user-text">
+          <view class="user-name">{{ item.author }}</view>
+          <view class="user-date">{{ item.date }}</view>
+        </view>
+      </view>
+      <view class="title">{{ item.title }}</view>
+      <view class="content">{{ item.content }}</view>
+      <view class="imgList">
+        <view class="imgItem" wx:for="{{ item.imgSrc }}">
+          <image src="{{ item.url }}"></image>
+        </view>
+      </view>
+    </view>
+    <view class="item-handle">
+      <view class="icon" bindtap="likeEvent" data-index="{{index}}"><image src="{{ item.likeImg }}"></image><text>{{ item.like.length }}</text></view>
+      <view class="icon" bindtap="replyEvent" data-id="{{ item.id }}"><image src="../../images/msg.png"></image><text>{{ item.msg.length }}</text></view>
+    </view>
+  </view>
+
+  <view class="no-more">没有更多了</view>
+</view>

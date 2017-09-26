@@ -1,0 +1,13 @@
+<!--pages/article/article.wxml-->
+<view class="page">
+  <view class="title">{{data.title}}</view>
+  <view class="date">{{ data.updatedAt }}</view>
+  <view class="images" wx:for="{{data.imgSrc}}">
+    <image src="{{item}}" mode="scaleToFill"></image>
+  </view>
+  <view class="about" wx:if="{{ display }}">景点介绍</view>
+  <view class="description" wx:if="{{ display }}">{{ data.description }}</view>
+  <view class="article">{{ data.article }}</view>
+  <view class="tips" wx:if="{{ display }}">特别提示</view>
+  <view wx:if="{{ display }}">{{ data.tips }}</view>
+</view>

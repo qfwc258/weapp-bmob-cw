@@ -1,0 +1,5 @@
+/* pages/replyMsg/replyMsg.wxss */
+page{ background: #eee}
+.edit-wrap{ padding: 30rpx; background: #FFF; border-bottom:1rpx solid #ddd }
+.content{ margin:20rpx 0; font-size: 32rpx; height: 400rpx; width: 100% }
+.submit{ margin: 30rpx;}

@@ -1,0 +1,32 @@
+/* pages/MsgList/MsgList.wxss */
+.AddMsg{ width: 120rpx; height: 120rpx; background: #F00; text-align: center; line-height: 110rpx; border-radius: 100%; font-size: 80rpx; color: #FFF; box-shadow: 0 10rpx 10rpx rgba(0, 0, 0, 0.6);}
+
+page{ background: #eee}
+.item{ background: #FFF; padding: 40rpx; margin-top: 20rpx}
+.user-bar{ display: flex;}
+.user-pic{ width: 90rpx; height: 90rpx; border-radius: 1px solid #eee}
+.user-pic image{ width: 100%; height: 100%; border-radius: 100%; display: block;}
+.user-text{ padding-left:20rpx; flex: 1; }
+.user-name{ color:#fada22; margin-bottom: 10rpx; font-size: 30rpx;}
+.user-date{ color: #999; font-size: 24rpx;}
+.title{ margin:15rpx 0; font-size: 32rpx;}
+.content{ font-size: 28rpx; color: #666; margin-bottom: 20rpx }
+.imgList{ display: flex; margin: 0 -10rpx }
+.imgItem {width: 33.333%; padding: 0 10rpx}
+.imgItem image{ width: 100%; height: 300rpx }
+
+.title-bar{ display: flex; background: #FFF; padding: 30rpx;}
+.title-img{ width: 120rpx; height: 120rpx;}
+.title-img image{ width: 100%; height: 100%; border-radius: 5px; display: block}
+.title-text{ flex: 1; padding-left:20rpx;}
+.title-title{ margin: 10rpx 0;}
+.title-content{ font-size: 28rpx; color: #666}
+.red{ color: #F00; margin-right: 30rpx;}
+
+.item-handle{ display: flex; flex-direction: row-reverse }
+.icon image{ width: 30rpx; height: 30rpx; margin-right: 10rpx; margin-left: 20rpx}
+.icon text{ color: #999}
+
+.no-more{ text-align: center; padding: 20rpx; color: #999;}
+
+.user image{ width: 80rpx; height: 80rpx;}

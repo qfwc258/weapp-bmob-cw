@@ -1,0 +1,11 @@
+/**app.wxss**/
+
+page{ font-family: "微软雅黑"}
+
+.flex{ display: flex}
+.justify-space{ justify-content: space-between}
+.p-md{ padding:0 20rpx; }
+.m-n-md{ margin: 0 -20rpx}
+.m-n-sm{ margin: 0 -10rpx}
+.m-h-md{ margin: 20rpx 0}
+.m-t-md{ margin-top: 20rpx;}

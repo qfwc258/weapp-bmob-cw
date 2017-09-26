@@ -1,0 +1,12 @@
+/* pages/fact/fact.wxss */
+page{ background: #eee}
+.fact-wrap{ background: #FFF; padding:30rpx 20rpx;}
+.fact-title{ font-size: 36rpx;}
+.fact-description{ margin-left: 10rpx; color: #666; font-size: 26rpx;}
+.top-img{ display: block; height: 200rpx; width: 100%}
+
+.dl-list{ border-top: 1rpx solid #eee; padding: 20rpx; background: #FFF}
+.dl-list-img{ width: 180rpx; height: 120rpx;}
+.dl-list-img image{ width: 100%; height: 120rpx}
+.dl-list-txt{ flex: 1; padding-left: 25rpx; font-size: 30rpx; position: relative}
+.date{ position: absolute; bottom: 0; right: 0; color: #999}

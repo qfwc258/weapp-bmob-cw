@@ -1,0 +1,18 @@
+<!--pages/AddMsg/AddMsg.wxml-->
+<form bindsubmit="formSubmit" >
+<view class="edit-wrap">
+  <input type="text" class="title" placeholder="标题" name="title" />
+  <textarea class="content" placeholder="话题内容" name="content"/>
+  <view class="upload-wrap">
+    
+    <view class="img-item" wx:for="{{uploadImg }}">
+      <icon type="clear" data-id="{{ item }}" bindtap="deleteImg"/>
+      <image src="{{ item }}"></image>
+    </view>
+
+    <view class="img-add" bindtap="addImg">+</view>
+  </view>
+</view>
+<button type="warn" size="{{warnSize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" class="submit"  formType="submit"> 发布 </button>
+</form>

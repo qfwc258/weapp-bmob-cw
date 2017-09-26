@@ -1,0 +1,28 @@
+<!--pages/userList/userList.wxml-->
+<view class="page">
+<view class="tips">共发布{{ list.length }}篇帖子</view>
+<view class="item" wx:for="{{ list }}">
+    <view bindtap="articleEvent" data-id="{{ item.id }}" >
+      <view class="user-bar">
+        <view class="user-pic"><image src="{{ item.userPic }}"></image></view>
+        <view class="user-text">
+          <view class="user-name">{{ item.author }}</view>
+          <view class="user-date">{{ item.date }}</view>
+        </view>
+      </view>
+      <view class="title">{{ item.title }}</view>
+      <view class="content">{{ item.content }}</view>
+      <view class="imgList">
+        <view class="imgItem" wx:for="{{ item.imgSrc }}">
+          <image src="{{ item.url }}"></image>
+        </view>
+      </view>
+    </view>
+    <view class="item-handle">
+      <view class="icon" bindtap="likeEvent" data-index="{{index}}"><image src="{{ item.likeImg }}"></image><text>{{ item.like.length }}</text></view>
+      <view class="icon" bindtap="replyEvent" data-id="{{ item.id }}"><image src="../../images/msg.png"></image><text>{{ item.msg.length }}</text></view>
+    </view>
+  </view>
+
+  <view class="no-more">没有更多了</view>
+  </view>

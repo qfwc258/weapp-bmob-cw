@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<view class="page">
+  <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiper">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" mode="scaleToFill"/>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="p-md">
+    <view class="list-item" wx:for="{{ list1 }}" data-id="{{ item.id }}" bindtap="hrefLink">
+      <block wx:if="{{ index < 2 }}">
+      <text class="list-item-title">{{ item.title }}</text>
+      <view class="flex m-n-sm">
+        <block wx:for="{{ item.imgSrc }}">
+          <view class="list-item-img">
+            <image src="{{ item }}"></image>
+          </view>
+        </block>
+      </view>
+      <view class="flex justify-space" >
+        <text class="list-item-sub-title">必游</text>
+      </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="dl-list flex" wx:for="{{ list2 }}" data-id="{{ item.id }}" bindtap="hrefLink" wx:if="{{ index < 2 }}">
+    <view class="dl-list-img"><image src="{{ item.imgSrc }}"></image></view>
+    <view class="dl-list-txt">
+      <text>{{ item.title }}</text>
+    </view>
+  </view>
+
+</view>

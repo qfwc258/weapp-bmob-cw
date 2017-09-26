@@ -1,0 +1,61 @@
+<!--pages/MsgArticle/MsgArticle.wxml-->
+<view class="page">
+  <view class="item">
+    <view class="user-bar">
+      <view class="user-pic">
+        <image src="{{ data.userPic }}"></image>
+      </view>
+      <view class="user-text">
+        <view class="user-name">{{ data.author }}</view>
+        <view class="user-date">{{ data.date }}</view>
+      </view>
+    </view>
+    <view class="title">{{ data.title }}</view>
+    <view class="content">{{ data.content }}</view>
+    <view class="imgList">
+      <block wx:if="{{ data.imgSrc.length > 0 }}">
+        <view class="imgItem" wx:for="{{ data.imgSrc }}">
+          <image src="{{ item.url }}"></image>
+        </view>
+      </block>
+    </view>
+    <view class="item-like">
+     <view class="item-like-pic">
+        <block wx:for="{{data.likeUser}}" wx:if=" {{ data.likeUser.length < 5 }} ">
+          <image src="{{item}}"></image>
+        </block>
+     </view>
+     <text class="item-like-text">{{ data.like.length }}人赞了</text>
+    </view>
+  </view>
+</view>
+
+<view class="msg-title">全部跟帖( {{ data.msg.length }} )</view>
+
+<view class="item msg-item" wx:for="{{ data.msg }}">
+  <view class="user-bar">
+    <view class="user-pic">
+      <image src="{{ item.userPic }}" class="circle"></image>
+    </view>
+    <view class="user-text">
+      <view class="user-name">
+        <text>{{ item.nickName }}</text>
+        <text style="color:#999">{{ index+1 }} 楼</text>
+      </view>
+      <view class="user-date">{{ item.createAt }}</view>
+    </view>
+  </view>
+  <view class="content"><text class="blue">{{ item.content.name }}</text> {{ item.content.content }}</view>
+  <view class="item-handle">
+      <view class="icon" bindtap="likeEvent" data-index="{{index}}"><image src="{{ item.likeImg }}"></image><text>{{ item.like.length }}</text></view>
+      <view class="icon" bindtap="replyEvent" data-index="{{index}}"><image src="../../images/msg.png"></image><text>回复</text></view>
+    </view>
+</view>
+
+<view class="no-more">没有更多了</view>
+
+<view class="footer">
+  <view class="footer-reply" bindtap="replyEvent" ><image src="../../images/msg.png"></image><text>我来说两句</text></view>
+  <view class="footer-like" bindtap="AlikeEvent"><image src="{{ data.likeImg }}"></image></view>
+</view>
+

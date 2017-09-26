@@ -1,0 +1,37 @@
+/* pages/MsgArticle/MsgArticle.wxss */
+
+.item{ background: #FFF; padding: 40rpx;}
+.user-bar{ display: flex;}
+.user-pic{ width: 90rpx; height: 90rpx; border-radius: 1px solid #eee}
+.user-pic image{ width: 100%; height: 100%; border-radius: 5rpx; display: block;}
+image.circle{ border-radius: 100%}
+.user-text{ padding-left:20rpx; flex: 1; }
+.user-name{ color:#fada22; margin-bottom: 10rpx; font-size: 30rpx; display: flex; justify-content: space-between;}
+.user-date{ color: #999; font-size: 24rpx;}
+.title{ margin:15rpx 0; font-size: 32rpx;}
+.content{ font-size: 28rpx; color: #666; margin-bottom: 20rpx;word-break:break-all}
+.imgList{ display: flex; margin: 0 -10rpx }
+.imgItem {width: 33.333%; padding: 0 10rpx}
+.imgItem image{ width: 100%; height: 300rpx }
+
+.item-like{ display: flex; justify-content: space-between; padding: 15rpx 0; align-items: center; height: 60rpx;}
+.item-like-pic image{ width: 60rpx; height: 60rpx; border-radius: 100%; display: block}
+.item-like-text{ font-size: 26rpx}
+
+.msg-title{ background: #eee; padding: 15rpx 20rpx; font-size: 26rpx;}
+.msg-item{ border-bottom: 1px solid #eee }
+.msg-item .content{ padding-left: 110rpx;}
+
+.item-handle{ display: flex; flex-direction: row-reverse }
+.icon image{ width: 30rpx; height: 30rpx; margin-right: 10rpx; margin-left: 20rpx}
+.icon text{ color: #999; font-size: 26rpx;}
+
+.blue{ color: #0072ff}
+.footer{ position: fixed; bottom: 0; width: 100%; left: 0; box-shadow: 0 0 5px rgba(0, 0, 0,0.3); background-color:#FFF; display: flex;}
+.footer-reply { width: 80%; border: 1px solid #ccc; border-radius: 5rpx; display: flex; align-items: center; justify-content: center; margin: 20rpx; height: 60rpx}
+.footer-reply image{ width: 40rpx; height: 40rpx; }
+.footer-reply text{ font-size: 26rpx; margin-left: 20rpx;}
+.footer-like{ width: 20%; margin: 20rpx;}
+.footer-like image{ width: 60rpx; height: 60rpx; }
+
+.no-more{ height: 80rpx; text-align: center; color: #999; font-size: 26rpx; padding-top: 20rpx; box-sizing: border-box}

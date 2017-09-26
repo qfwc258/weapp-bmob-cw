@@ -1,0 +1,10 @@
+/* pages/article/article.wxss */
+.page{ margin: 40rpx}
+.title{ margin-bottom: 20rpx; font-size: 36rpx;}
+.date{ font-size: 26rpx; margin-bottom:20rpx; color: #999 }
+.images{ margin-bottom:20rpx }
+.images image{ width: 100%; display: block}
+.description{ font-size: 26rpx; color: #666; margin-bottom:50rpx; line-height: 36rpx;}
+.article{ font-size: 36rpx; line-height: 45rpx; margin-bottom:20rpx; white-space: pre-line;}
+.about{ font-size: 26rpx; margin-bottom:20rpx;  }
+.tips{ font-size: 36rpx; font-weight: bold}

@@ -1,0 +1,15 @@
+<!--pages/fact/fact.wxml-->
+<image src="../../images/t.jpg" mode="scaleToFill" height="200" class="top-img"></image>
+<navigator url="../MsgList/MsgList" >
+  <view class="fact-wrap">
+    <text class="fact-title">爆料说</text>
+    <text class="fact-description">快来爆料你身边的“新鲜”事</text>
+  </view>
+</navigator>
+<view class="dl-list flex" wx:for="{{ data }}" data-id="{{ item.id }}" bindtap="hrefLink" wx:if="{{ index < 3 }}">
+  <view class="dl-list-img"><image src="{{ item.imgSrc[0] }}"></image></view>
+  <view class="dl-list-txt">
+    <text>{{ item.title }}</text>
+    <text class="date">{{ item.createdAt }}</text>
+  </view>
+</view>

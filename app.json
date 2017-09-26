@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/MsgList/MsgList",
+    "pages/userList/userList",
+    "pages/replyMsg/replyMsg",
+    "pages/MsgArticle/MsgArticle",
+    "pages/AddMsg/AddMsg",
+    "pages/fact/fact",
+    "pages/figure/figure",
+    "pages/article/article",
+    "pages/Varticle/Varticle"
+  ],
+  "window": {
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "borderStyle": "#F00",
+    "color": "#AAAAAA",
+    "selectedColor": "#EE3E40",
+    "backgroundColor": "#F6F6F6",
+    "list": [
+      {
+        "iconPath": "images/5937650018fdd.png",
+        "selectedIconPath": "images/5937650019037.png",
+        "text": "首页",
+        "pagePath": "pages/index/index"
+      },
+      {
+        "iconPath": "images/5937650031840.png",
+        "selectedIconPath": "images/5937650031890.png",
+        "text": "图视",
+        "pagePath": "pages/figure/figure"
+      },
+      {
+        "iconPath": "images/593765004c6a4.png",
+        "selectedIconPath": "images/593765004c6fb.png",
+        "text": "爆料",
+        "pagePath": "pages/fact/fact"
+      }
+    ]
+  }
+}

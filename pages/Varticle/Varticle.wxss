@@ -1,0 +1,7 @@
+/* pages/Varticle/Varticle.wxss */
+.top-bar{ position: relative }
+.top-bar image{ height: 400rpx; display: block; width: 100%}
+.title{ position: absolute; bottom: 0; width: 100%; left: 0; background:-webkit-gradient(linear, 0 0, 0 bottom, from(transparent), to(#000)); height: 100rpx;}
+.title text{ padding-left: 40rpx; color: #FFF; font-size: 36rpx;}
+.date{ background: #eee; font-size: 26rpx; height: 50rpx; line-height: 50rpx; padding-left: 40rpx; color: #999}
+.article{ padding: 40rpx; white-space: pre-line; }

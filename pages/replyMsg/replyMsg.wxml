@@ -1,0 +1,8 @@
+<!--pages/replyMsg/replyMsg.wxml-->
+<form bindsubmit="formSubmit" >
+<view class="edit-wrap">
+  <textarea class="content" placeholder="回复" name="content"/>
+</view>
+<button type="warn" size="{{warnSize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" class="submit"  formType="submit"> 回复 </button>
+</form>

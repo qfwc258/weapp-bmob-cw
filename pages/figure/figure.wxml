@@ -1,0 +1,9 @@
+<!--pages/figure/figure.wxml-->
+<view class="page">
+  <view class="item" wx:for="{{ data }}" data-id="{{ item.id }}" bindtap="hrefLink">
+    <image src="{{ item.imgSrc }}" mode="scaleToFill"></image>
+    <view class="title">{{item.title}}</view>
+    <view class="time">{{ item.createdAt }}</view>
+    <view class="tips">{{ item.tag }}</view>
+  </view>
+</view>

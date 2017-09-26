@@ -1,0 +1,9 @@
+<!--pages/Varticle/Varticle.wxml-->
+<view class="top-bar">
+<image src="{{ data.imgSrc }}" mode="scaleToFill"></image>
+<view class="title">
+  <text>{{ data.title }}</text>
+</view>
+</view>
+<view class="date">{{ data.updatedAt }}</view>
+<view class="article">{{ data.article }}</view>
